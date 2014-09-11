@@ -87,6 +87,15 @@
                                     <rect key="frame" x="16" y="250" width="200" height="30"/>
                                 </variation>
                             </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWL-sH-PsS">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="93" width="293" height="40"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6k-4E-TbU">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.046531623330000001" green="1" blue="0.45130587379999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -100,13 +109,13 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2yy-HO-F6G"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWL-sH-PsS">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKS-SJ-p2p">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="14" y="77" width="293" height="40"/>
+                                    <rect key="frame" x="8" y="64" width="281" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -116,8 +125,9 @@
                                 <exclude reference="y6J-Cg-VvH"/>
                                 <exclude reference="F58-5j-soO"/>
                                 <exclude reference="lqg-CV-Kg3"/>
-                                <exclude reference="d6k-4E-TbU"/>
                                 <exclude reference="oWL-sH-PsS"/>
+                                <exclude reference="d6k-4E-TbU"/>
+                                <exclude reference="RKS-SJ-p2p"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -125,8 +135,9 @@
                                 <include reference="y6J-Cg-VvH"/>
                                 <include reference="F58-5j-soO"/>
                                 <include reference="lqg-CV-Kg3"/>
-                                <include reference="d6k-4E-TbU"/>
                                 <include reference="oWL-sH-PsS"/>
+                                <include reference="d6k-4E-TbU"/>
+                                <include reference="RKS-SJ-p2p"/>
                             </mask>
                         </variation>
                     </view>
@@ -135,6 +146,7 @@
                         <outlet property="enterNameTextField" destination="F58-5j-soO" id="3jk-hs-433"/>
                         <outlet property="mailButton" destination="d6k-4E-TbU" id="VwC-p1-xfC"/>
                         <outlet property="messageLabel" destination="oWL-sH-PsS" id="hSk-fX-uE6"/>
+                        <outlet property="nameLabel" destination="RKS-SJ-p2p" id="utU-Nb-mXQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
